@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medio Ambiente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            background: url('https://images.pexels.com/photos/1151418/pexels-photo-1151418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .navbar-brand i {
+            color: #28a745; /* Cambia el color del ícono aquí */
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1, .hero p {
+            animation: fadeInDown 2s;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .btn-scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            z-index: 99;
+        }
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+        footer {
+            background-color: rgba(52, 58, 64, 0.8);
+        }
+        .section-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .section-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: -300px;
+        }
+        .team-member {
+            margin: 20px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 800px;
+            height: 500px;
+            margin-top: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .team-member h3 {
+            margin-top: 10px;
+            font-size: 1.4em;
+        }
+        .team-member p {
+            font-size: 1em;
+        }
+        .social-icon {
+            color: #28a745; /* Cambia el color del ícono aquí */
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio"><i class="fa-solid fa-seedling"></i> EcoVida</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <section id="inicio" class="hero">
+        <div>
+            <h1>Protejamos el Medio Ambiente</h1>
+            <p>Juntos podemos hacer la diferencia</p>
+        <a href="https://www.natureandculture.org/es/clima/" class="btn btn-success">Descubre Más</a>
+
+        </div>
+    </section>
+
+    <section id="sobre" class="container text-center my-5">
+        <div class="section-content">
+            <h2>Sobre el Medio Ambiente</h2>
+            <p>La naturaleza nos brinda todo lo que necesitamos para vivir. Es nuestro deber cuidarla y preservarla.</p>
+            <img src="img/destok.png" alt="Naturaleza">
+            <p class="mt-4">En EcoVida, nos dedicamos a promover prácticas sostenibles y a concienciar sobre la importancia de proteger nuestro entorno. Creemos que cada pequeño esfuerzo cuenta y juntos podemos hacer una gran diferencia. Nuestro objetivo es educar y empoderar a las personas para que tomen medidas positivas hacia un futuro más verde y sostenible.</p>
+            <p class="mt-4">Desde la reducción de residuos hasta la conservación de la biodiversidad, trabajamos en una variedad de proyectos que abordan los desafíos ambientales más urgentes de nuestro tiempo. Únete a nosotros en esta misión y descubre cómo puedes contribuir a un futuro más verde.</p>
+            <p class="mt-4">Nuestro equipo está compuesto por expertos en diversas áreas, incluyendo biología, ecología, ingeniería ambiental y educación. Trabajamos juntos para desarrollar soluciones innovadoras y efectivas que aborden los problemas ambientales más críticos. Creemos en la importancia de la colaboración y la participación comunitaria para lograr un impacto duradero.</p>
+            <p class="mt-4">Además de nuestros proyectos de conservación, también organizamos talleres, seminarios y eventos educativos para aumentar la conciencia y el conocimiento sobre la sostenibilidad. Nos esforzamos por inspirar a las personas a tomar medidas positivas y a adoptar prácticas más sostenibles en su vida diaria.</p>
+        </div>
+    </section>
+    
+    <section id="equipo" class="container text-center my-5">
+        <div class="section-content">
+            <h2>Conoce a Nuestro Equipo</h2>
+            <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-3 team-member">
+                                <img src="img/fundador.png" alt="Juan Pérez">
+                                <h3>Juan Pérez</h3>
+                                <p>Fundador</p>
+                            </div>
+                            <div class="col-md-3 team-member">
+                                <img src="img/co-fundadora.png" alt="María López">
+                                <h3>María López</h3>
+                                <p>Co-Fundadora</p>
+                            </div>
+                            <div class="col-md-3 team-member">
+                                <img src="img/miembro.png" alt="Carlos García">
+                                <h3>Carlos García</h3>
+                                <p>Director de Proyectos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-3 team-member">
+                                <img src="img/especialista_en eduacionambiental.png" alt="Ana Martínez">
+                                <h3>Ana Martínez</h3>
+                                <p>Especialista en Educación Ambiental</p>
+                            </div>
+                            <div class="col-md-3 team-member">
+                                <img src="img/ingeniero_mbiental.png" alt="Luis Rodríguez">
+                                <h3>Luis Rodríguez</h3>
+                                <p>Ingeniero Ambiental</p>
+                            </div>
+                            <div class="col-md-3 team-member">
+                                <img src="img/biologas.png" alt="Sofía Hernández">
+                                <h3>Sofía Hernández</h3>
+                                <p>Bióloga</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacto" class="container text-center my-5">
+        <div class="section-content">
+            <h2>Contacto</h2>
+            <p>Únete a nuestra causa. Contáctanos.</p>
+            <form class="row g-3 justify-content-center">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Correo" required>
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" placeholder="Mensaje" required></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="bg-black text-white text-center py-3">
+        <p>&copy; 2025 EcoVida. Todos los derechos reservados.</p>
+        <div>
+            <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook social-icon"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fa-brands fa-twitter social-icon"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fa-brands fa-instagram social-icon"></i></a>
+        </div>
+    </footer>
+    
+    <button class="btn btn-success btn-scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    
+    <script>
+        $(document).ready(function(){
+            $('#descubreMas').click(function(){
+                $('html, body').animate({ scrollTop: $('#sobre').offset().top }, 1000);
+            });
+            
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#scrollTopBtn').fadeIn();
+                } else {
+                    $('#scrollTopBtn').fadeOut();
+                }
+            });
+            
+            $('#scrollTopBtn').click(function() {
+                $('html, body').animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+        });
+
+/*function cargarPagina() {
+            fetch('https://www.natureandculture.org/es/clima/')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('contenido').innerHTML = data;
+                })
+                .catch(error => console.error('Error:', error));
+        }*/
+    </script>
+</body>
+</html>
